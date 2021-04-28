@@ -91,7 +91,7 @@ class App extends React.Component{
         <>
         <div className="div">
           <img className="img" src="/logo-akna.png" title="Logo da Akna"></img>
-        <h1>Akna Lib</h1>
+        <h1>Akna Lib</h1> 
         <subtitle><h3>Este projeto visa quem precisa listar e estocar uma série de livros.</h3></subtitle>
         </div>
           <Container className="container">
