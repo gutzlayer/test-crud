@@ -1,60 +1,66 @@
+# AKNA Lib :book:
 
-# Akna Software - Analista Programador FrontEnd
+## Considerações iniciais
 
-## Objetivo
+Eu fiz esse projeto de acordo com o teste que me foi enviado na segunda-feira(26/04) para ser entregue na quarta-feira(28/04), espero que gostem do conteúdo e aguardo para uma possível conversa.
 
-Desenvolva um projeto básico que consiste em um site de uma pequena livraria. As funcionalidades deste site serão mais focadas em um simples CRUD (CREATE, READ, UPDATE, DELETE) de livros, onde é possível cadastrar, listar e remover livros do estoque.
+## Sobre o Projeto :memo:
 
-## Instruções de pubicação
+Eu fiz um CRUD imaginando um possível estoquista de loja e seu controle sobre os produtos.
 
-1. Para publicar seu projeto você deverá fazer um fork desse repositório.
-2. A partir do momento que você criou o fork do repositório você tem até 24h para criar um pullrequest
+Eu vi que era para ser feito em duas telas, porém o esquema de "Single Page" se encaixou melhor.
 
-## Detalhes do projeto
+Outra coisa também, foi o DropDown, ele ia ficar um pouco feio com o padrão tabela e não entendi muito bem como ele se encaixaria.
 
-**O projeto consiste na criação de duas telas sendo:**
+Mas como disse antes, eu pensei num estoquista e coloquei o ID para referenciar os produtos, com isso as colunas são:
 
-- Tela de listagem de livros
-- Tela de cadastro/edição de livros
+1- ID, 2-LIVRO, 3-AUTOR, 4-PREÇO e 5-AÇÕES(botões de Editar e Excluir).
 
-### Descrição das telas
-__Listagem de livros__
+## Futuras melhorias :memo:
 
-Na tela de listagem de livros deverá haver uma tabela de livros com as colunas de Nome, Autor, Preço e Opções. Na coluna de opções deverá haver um dropdown com as seguintes opções:
+Futuramente poderá ser adicionado um filtro de ordem e um filtro de adicionados nos elementos ID, Livros, Autor e preço, depois de uma certa quantidade de livros ter uma paginação embaixo das lista e além de uma cara nova pro futuro site.
 
-- Editar (edita todos os dados do livro)
-- Excluir (oferece a opção de excluir o livro)
+## Tecnologias usadas :heavy_check_mark:
 
-__Cadastro e Edição de Livros__
+Eu desenvolvi o projeto com React como principal tecnologia, onde utilizei um pouco de JavaScript em alguns casos, para fazer os botões e os estilos dos formulários eu utilizei, pela primeira vez, o Bootstrap e também um gerenciador de pacotes NPM.
 
-Na tela de cadastro/edição de livros haverá um formulário para o preenchimento dos seguintes dados:
-- Nome do livro
-- Autor do livro
-- Preço do livro
+### Para rodar o projeto
 
-Obs: todos os campos deverão ser obrigatórios, e o campo de preço não deverá aceitar letras e nem caracteres especiais.
+Para rodar o projeto você deverá iniciá-lo com npm start.
 
-### Layout
-O site deve ser inteiramente responsivo, ou seja, deve suportar em dispositivos como smartphones, tablets, e desktop.
+### Exemplo do código
 
-## Tecnologias que podem ser utilizadas
+const data = [
+{ id: 1, livro: "O Primo Basílio", autor: "Eça de Queirós", preco:"25"},
+{ id: 2, livro: "Memórias Póstumas de Brás Cubas", autor: "Machado de Assis", preco:"25"},
+{ id: 3, livro: "Sherlock Holmes", autor: "Arthur Conan Doyle", preco:"25"},
+{ id: 4, livro: "O Conde de Monte Cristo", autor: "Alexandre Dumas", preco:"25"},
+{ id: 5, livro: "O pequeno Príncipe", autor: "Antoine de Saint-Exupéry e Robson Luis Nicolay", preco:"25"},
+];
 
-Poderá ser usado um framework ou uma biblioteca em Javascript para desenvolver o projeto, como por exemplo: Angular JS (1, 2, 4, etc...), Vue JS, React JS, JQuery.
-Em relação ao CSS, poderá ser usado algum framework como Bootstrap, Materialize CSS, Semantic UI entre outros, fica ao seu critério, ou caso prefira poderá ser usado CSS puro também.
-O uso de pré-processadores CSS como SASS ou LESS é opcional.
+class App extends React.Component{
+state= {
+data:data,
+form:{
+id:'',
+livro:'',
+autor:'',
+preco:'',
+},
+modalAdicionar: false,
+modalEditar: false,
+};
 
-## API
+    ...
 
-O desenvolvimento da API deste projeto deverá ser realizado utilizando a biblioteca json-server,que irá ajudá-lo a desenvolver uma API em JSON rapidamente e sem prévio conhecimento em back-end. Essa biblioteca funciona criando uma API fake com o npm possibilitando criar um CRUD rapidamente e salvando os dados em um arquivo JSON.
-Nos links a seguir há um breve tutorial (em inglês) explicando o modo de instalação e uso da biblioteca.
+    ...
 
-Documentação: https://github.com/typicode/json-server#getting-started
+    ...
 
-Video Tutorial: https://www.youtube.com/watch?v=1zkgdLZEdwM
+### Considerações finais
 
-## Dúvidas
+Desde já agradeço a oportunidade.
 
-Em caso de duvidas, por favor mande um email para dep.desenvolvimento@akna.com. 
+Muito obrigado pelo apoio e tomara que dê tudo certo para continuarmos no processo.
 
-
-
+Até mais :handshake: , Gustavo Silva

@@ -1,0 +1,25 @@
+.img {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.primary {
+  width: 70px;
+  margin-bottom: 3px;
+}
+
+.danger {
+  width: 70px;
+  margin-bottom: 3px;
+}
+
+.container {
+  background-color: rgba(221, 221, 221, 0.356);
+}
+
+.div {
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bolder;
+}
