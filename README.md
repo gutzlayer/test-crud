@@ -26,7 +26,9 @@ Eu desenvolvi o projeto com React como principal tecnologia, onde utilizei um po
 
 ### Para rodar o projeto
 
-Para rodar o projeto você deverá iniciá-lo com npm start.
+Para rodar esse projeto, você deverá abrir com react (create-react-app) e instalar o framework Bootstrap pelo pacote NPM (npm i bootstrap reacstrap).
+
+Para rodar o projeto você deverá iniciá-lo com (npm run start).
 
 ### Exemplo do código
 
